@@ -1,0 +1,22 @@
+# Core dependencies for the Astro conversational agent with FastRTC
+
+# FastRTC: Real-time communication library for audio streaming and STT/TTS
+fastrtc
+
+# Groq SDK: For interacting with Groq's API and Mixtral-8x7B language model
+groq
+
+# Gradio: For launching the web-based UI
+gradio
+
+# Optional: Extra FastRTC dependencies for built-in STT and TTS
+# Uncomment if not automatically included with fastrtc
+# (FastRTC docs suggest these are optional extras for pause detection and TTS)
+fastrtc[vad,tts]
+
+# Optional: Hugging Face transformers for STT/TTS models
+# Uncomment if you need specific control over models not bundled with FastRTC
+transformers
+torch  # Required for transformers-based models
+
+# Note: Standard library modules like os and time are built-in and don’t need listing
